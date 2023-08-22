@@ -1,9 +1,5 @@
-﻿using MVVMTest3.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MVVMTest3.View;
+using System.Windows;
 using System.Windows.Input;
 
 namespace MVVMTest3.ViewModel
@@ -12,7 +8,19 @@ namespace MVVMTest3.ViewModel
     {
         public ICommand OpenNewClientCommand { get; private set; }
 
-        #region Метод открытия окна для добавления нового клиента
+        #region Методы открытия окна для добавления нового клиента
+        private void OpenNewWindowToAddNewClientMethod()
+        {
+            PersonWindow personWindow = new();
+            SetCenterPositionAndOpen(personWindow);
+        }
+
+        private void SetCenterPositionAndOpen(Window window)
+        {
+            window.Owner = Application.Current.MainWindow;
+            window.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            window.ShowDialog();
+        }
         #endregion
 
         #region Команда открытия окна для добавления нового клиента
