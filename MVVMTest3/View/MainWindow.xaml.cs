@@ -13,7 +13,7 @@ namespace MVVMTest3.View
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = ApplicationViewModel();
+            DataContext = new ApplicationViewModel();
         }
     }
 }

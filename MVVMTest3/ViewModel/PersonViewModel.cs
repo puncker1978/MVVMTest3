@@ -7,6 +7,10 @@ namespace MVVMTest3.ViewModel
         public ICommand SaveNewClientCommand { get; private set; }
 
         #region Метод сохранения нового клиента в репозитории клиентов
+        private void SaveNewClientMethod()
+        {
+
+        }
         #endregion
 
         #region Команда сохранения нового клиента в репозитории клиентов
