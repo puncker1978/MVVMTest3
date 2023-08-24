@@ -26,7 +26,7 @@ namespace MVVMTest3.ViewModel
 		private void AddUser(object obj)
 		{
 			UserManager.AddUser(new User() { Name = Name, Email = Email });
-            var addUser = obj as Window;
+            Window addUser = obj as Window;
 			addUser.Close();
         }
 	}
