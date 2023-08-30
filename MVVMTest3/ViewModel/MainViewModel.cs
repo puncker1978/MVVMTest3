@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 using MVVMTest3.Models;
-using MVVMTest3.Utilites;
+using MVVMTest3.Utilities;
 using MVVMTest3.Views;
 
 namespace MVVMTest3.ViewModel

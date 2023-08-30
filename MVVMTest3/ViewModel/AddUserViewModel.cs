@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using MVVMTest3.Models;
-using MVVMTest3.Utilites;
+using MVVMTest3.Utilities;
 
 namespace MVVMTest3.ViewModel
 {
@@ -18,15 +18,14 @@ namespace MVVMTest3.ViewModel
 			AddUserCommand = new RelayCommand(AddUser, CanAddUser);
 		}
 
-		private bool CanAddUser(object obj)
+		private bool CanAddUser()
 		{
 			return true;
 		}
 
-		private void AddUser(object obj)
+		private void AddUser()
 		{
 			UserManager.AddUser(new User() { Name = Name, Email = Email });
-            Window addUser = obj as Window;
 			addUser.Close();
         }
 	}

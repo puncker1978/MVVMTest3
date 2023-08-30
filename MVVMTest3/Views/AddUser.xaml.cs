@@ -11,7 +11,6 @@ namespace MVVMTest3.Views
 			InitializeComponent();
 			AddUserViewModel addUserViewModel = new AddUserViewModel();
 			this.DataContext = addUserViewModel;
-
 		}
 	}
 }

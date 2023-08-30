@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace MVVMTest3.Utilites
+namespace MVVMTest3.Utilities
 {
     public class RelayCommand : ICommand
     {
